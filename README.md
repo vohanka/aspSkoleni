@@ -32,7 +32,8 @@
 * relationships - https://learn.microsoft.com/en-us/ef/core/modeling/relationships
 * mapping attributes - https://www.learnentityframeworkcore.com/misc/mapping-attributes
 * data annotations - https://www.entityframeworktutorial.net/code-first/dataannotation-in-code-first.aspx
-
+* EF Core Power Tools https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools
+* 
 ### Dependency Injection
 * https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0
 
