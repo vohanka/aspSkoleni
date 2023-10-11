@@ -33,7 +33,7 @@ namespace WEBAPIPerson.Controllers
         }
 
         // GET: api/Person/5
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<Person>> GetPerson(int id)
         {
           if (_context.Persons == null)
@@ -41,6 +41,23 @@ namespace WEBAPIPerson.Controllers
               return NotFound();
           }
             var person = await _context.Persons.FindAsync(id);
+
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+            return person;
+        }
+
+        [HttpGet("{email}")]
+        public async Task<ActionResult<Person>> GetByEmail(string email)
+        {
+            if (_context.Persons == null)
+            {
+                return NotFound();
+            }
+            var person = await _context.Persons.FirstOrDefaultAsync(x => x.Email == email);
 
             if (person == null)
             {
