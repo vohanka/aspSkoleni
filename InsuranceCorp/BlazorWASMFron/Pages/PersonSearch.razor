@@ -1,0 +1,62 @@
+﻿@page "/person/search"
+
+
+<h3>Hledej osobu</h3>
+
+<EditForm OnSubmit="Search" Model="searchterm" >
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input @bind-value="searchterm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp /">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Hledej</button>
+</EditForm>
+
+<table class="table">
+    <tr>
+        <td>
+            Jméno
+        </td>
+        <td>
+            Příjmení
+        </td>
+        <td>
+            Email
+        </td>
+        <td>
+            Datum narození
+        </td>
+    </tr>
+    @foreach(var person in persons)
+    {
+        <tr>
+            <td>
+                @person.FirstName
+            </td>
+            <td>
+                @person.LastName
+            </td>
+            <td>
+                @person.Email
+            </td>
+            <td>
+                @person.DateOfBirth.ToString("dd. MM. yyyy")
+            </td>
+        </tr>
+    }
+</table>
+
+@code {
+    string searchterm = "";
+
+    List<Person>? persons = new List<Person>();
+
+    async Task Search()
+    {
+        var person_api = "https://localhost:7055";
+
+        HttpClient httpClient = new HttpClient();
+
+        persons = await httpClient.GetFromJsonAsync<List<Person>>($"{person_api}/api/Search/ByEmail/{searchterm}");
+    }
+}
