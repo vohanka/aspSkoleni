@@ -49,3 +49,7 @@ https://www.radzen.com/features/
 # Polly
 * https://github.com/App-vNext/Polly
 * https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly
+
+  # eshop on containers
+  * https://github.com/dotnet-architecture/eShopOnContainers
+  * ebook https://aka.ms/microservicesebook
