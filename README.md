@@ -53,3 +53,32 @@ https://www.radzen.com/features/
   # eshop on containers
   * https://github.com/dotnet-architecture/eShopOnContainers
   * ebook https://aka.ms/microservicesebook
+
+# dalsi odkazy / rabbit / grafana 
+
+https://code-maze.com/aspnetcore-rabbitmq/
+
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-7.0&tabs=visual-studio
+
+https://blog.devops.dev/rabbitmq-using-net-core-and-docker-a21aee949220
+
+https://medium.com/trimble-maps-engineering-blog/getting-started-with-net-core-docker-and-rabbitmq-part-3-66305dc50ccf
+
+https://easynetq.com/
+
+https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html
+
+PROM GRAFANA
+https://medium.com/@niteshsinghal85/track-api-usage-with-prometheus-and-grafana-in-asp-net-core-cfdf03346b4
+
+https://github.com/JamesNK/aspnetcore-grafana
+
+https://learn.microsoft.com/en-us/dotnet/core/diagnostics/metrics-collection#view-metrics-in-grafana-with-opentelemetry-and-prometheus
+
+https://medium.com/c-sharp-progarmming/net-core-microservice-metrics-with-prometheus-and-grafana-d228bea89283
+
+.....
+
+Visual Studio Container tools
+https://learn.microsoft.com/en-us/visualstudio/containers/?view=vs-2022
