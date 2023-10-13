@@ -37,3 +37,7 @@
 ### Dependency Injection
 * https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0
 
+
+# swagger
+
+https://github.com/RicoSuter/NSwag/wiki/NSwagStudio
